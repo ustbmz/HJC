@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="triangle"></div>
+      <div class="top-triangle"></div>
+      <div class="left-triangle"></div>
+      <div class="right-triangle"></div>
+      <div class="bottom-triangle"></div>
+    </div>
+  </body>
+
+  <style>
+    .container {
+      margin: 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .triangle {
+      width: 0;
+      height: 0;
+      border: 100px solid;
+      border-color: orange blue red green;
+    }
+    .top-triangle {
+      width: 0;
+      height: 0;
+      border-top: 100px solid orange;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+    }
+    .left-triangle {
+      width: 0;
+      height: 0;
+      border-left: 100px solid green;
+      border-top: 100px solid transparent;
+      border-bottom: 100px solid transparent;
+    }
+    .right-triangle {
+      width: 0;
+      height: 0;
+      border-right: 100px solid blue;
+      border-top: 100px solid transparent;
+      border-bottom: 100px solid transparent;
+    }
+    .bottom-triangle {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid red;
+      border-top: 100px solid transparent;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+    }
+  </style>
+</html>
